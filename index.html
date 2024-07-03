@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Association Rules</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Association Rules</h2>
+
+<table>
+    <tr>
+        <th>Rule</th>
+        <th>Antecedents</th>
+        <th>Consequent</th>
+        <th>Support</th>
+        <th>Confidence</th>
+        <th>Lift</th>
+        <th>Justification</th>
+    </tr>
+    <tr>
+        <td>Rule 1</td>
+        <td>(biscuits, fruit, frozen foods, vegetables)</td>
+        <td>(bread and cake)</td>
+        <td>0.2008</td>
+        <td>0.8941</td>
+        <td>1.2424</td>
+        <td>This rule indicates that when customers buy a combination of biscuits, fruit, frozen foods, and vegetables they are very likely to also purchase bread and cake. The high confidence (0.8941) suggests a strong relationship between these items, making it useful for cross-promotional strategies.</td>
+    </tr>
+    <tr>
+        <td>Rule 2</td>
+        <td>(total, fruit, vegetables)</td>
+        <td>(bread and cake)</td>
+        <td>0.2027</td>
+        <td>0.8933</td>
+        <td>1.2413</td>
+        <td>This rule shows that customers who purchase fruit and vegetables and spend a high amount of money are also very likely to buy bread and cake, with a high confidence of 0.8933. This insight could be used to place these items near each other in the store to boost sales.</td>
+    </tr>
+    <tr>
+        <td>Rule 3</td>
+        <td>(total, fruit)</td>
+        <td>(bread and cake)</td>
+        <td>0.2386</td>
+        <td>0.8882</td>
+        <td>1.2341</td>
+        <td>This rule indicates a significant likelihood (confidence of 0.8732) that customers who buy fruit and spend a high amount of money will also buy bread and cake. The combination of items suggests potential for bundled promotions or targeted advertisements to increase the average basket size.</td>
+    </tr>
+</table>
+
+</body>
+</html>
